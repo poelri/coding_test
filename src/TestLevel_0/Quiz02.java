@@ -4,10 +4,9 @@ package TestLevel_0;
 my_string에 나온 단어를 앞에서부터 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.
  */
 public class Quiz02 {
-    class Solution {
         public String[] solution(String my_string) {
             String[] answer = my_string.trim().split("\\s+");
             return answer;
         }
     }
-}
+
