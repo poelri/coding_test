@@ -12,8 +12,9 @@ import java.util.Scanner;
 1 ≤ M ≤ 100,000
 1 ≤ i ≤ j ≤ N
 * */
-public class Quiz01 {
+public class Quiz01_01 {
         public static void main(String[] args) {
+
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt();  // 첫 번째 입력: 수의 개수 N
             int m = sc.nextInt();  // 두 번째 입력: 구간의 수 M
