@@ -8,12 +8,21 @@ public class Quiz06_01 {
         int answer = 0;
         String new_s = s;
         for(int i = 0; i < s.length(); i++){
-            if(checkString(new_s)) answer++;
+            if(checkString(new_s)) // 밑에 메서드가 유효한 괄호 문자열인지 검사하는 메서드
+                answer++; // 그래서 유효하면 answer를 ++ 해줄거임
             new_s = new_s.substring(1, s.length()) + new_s.charAt(0);
+            // substring은 문자열의 일부를 추출하는데 사용
+            // 인덱스 번호 1 부터 문자열의 끝가지 반환해
+            // 문자열 회전이란 결국에는 abcd가 bcda로 변환하는거임
         }
 
         return answer;
     }
+
+    // 왜 두개의 메서드를 사용해야 했을까?
+    // 각 메서드가 하나의 역할에 집중할 수 있도록 하기 위해서
+    // 재사용하기 좋으니까
+    // solution 메서드는 전체적인 흐름을 관리하는 거고 , checkString 메서드는 특정작업을 수행하는것.
 
     boolean checkString(String s){
         Stack<Character> stack = new Stack<>(); // 스택 만들어
