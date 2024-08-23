@@ -8,9 +8,10 @@ import java.util.*;
  *
  * 어피치에게 시달리는 제이지를 도와, DB 캐시를 적용할 때 캐시 크기에 따른 실행시간 측정 프로그램을 작성하시오.
  */
-    class Quiz02 {
+    class Quiz02_01 {
         public int solution(int cacheSize, String[] cities) {
             int answer = 0;
+
             ArrayList<String> cache = new ArrayList<>();
 
             if(cacheSize == 0){ //캐시 크기가 0이면
