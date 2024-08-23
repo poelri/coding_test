@@ -8,7 +8,7 @@ public class Quiz04_01 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        int N = Integer.parseInt(br.readLine()); // reaLine으로 받아온 첫번째 라인 값을 n에 넣어
+        int N = Integer.parseInt(br.readLine()); // readLine으로 받아온 첫번째 라인 값을 정수로 변환하자
 
         int[] num = new int[N]; // 배열을 n의 수 만큼 만들어
 
